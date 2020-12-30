@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Diego Rodríguez</Authors>
+    <Version>1.0.0-alpha.1</Version>
+    <Authors>Diego Rodríguez</Authors>
+    <Description>Contentful Cli tool to create classes from your content models.</Description>
+    <Copyright>Diego Rodríguez 2020</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>contentful-model-generator</ToolCommandName>
+    <PackageProjectUrl>https://github.com/rodribus/Contentful.ModelGenerator.Cli</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rodribus/Contentful.ModelGenerator.Cli</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageId>Contentful.ModelGenerator.Cli</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>contentful CMS cli</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CliFx" Version="1.6.0" />
+    <PackageReference Include="contentful.csharp" Version="5.0.4" />
+    <PackageReference Include="Goblinfactory.Konsole" Version="6.2.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.8.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

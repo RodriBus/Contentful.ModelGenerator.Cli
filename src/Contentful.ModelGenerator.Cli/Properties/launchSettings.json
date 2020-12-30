@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Contentful.ModelGenerator.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
